@@ -1,0 +1,9 @@
+{
+  "name": "11dafd07-bc5e-4580-9ced-d928b715c76b",
+  "displayName": "sql_query",
+  "description": "Use this tool to get information about a table, including the description, schema, and number of rows that will help answer the user's question. Always include the Project_id and Dataset_id in Table_id\n\nProject_id: 'sample-9e286'\nDataset_id: 'service_agent'\nTable_id: 'sample-9e286.service_agent.sales'",
+  "openApiSpec": {
+    "ignoreUnknownFields": true
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

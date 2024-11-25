@@ -1,0 +1,105 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "Execute SQL Query API",
+        "description": "API to execute a SQL query against a BigQuery dataset and retrieve the results.",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://us-central1-sample-9e286.cloudfunctions.net/sql_query"
+        }
+    ],
+    "paths": {
+        "/sql_query": {
+            "post": {
+                "summary": "Execute a SQL query",
+                "description": "Executes a specified SQL query and returns the results along with the table schema information.",
+                "operationId": "execute_sql_query",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "query": {
+                                        "type": "string",
+                                        "description": "The SQL query to be executed."
+                                    },
+                                    "tableSchema": {
+                                        "type": "object",
+                                        "description": "The schema of the table that needs to be queried or the expected schema of the result.",
+                                        "properties": {
+                                            "schema": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "name": {
+                                                            "type": "string",
+                                                            "description": "Name of the field in the table"
+                                                        },
+                                                        "type": {
+                                                            "type": "string",
+                                                            "description": "Data type of the field"
+                                                        },
+                                                        "mode": {
+                                                            "type": "string",
+                                                            "description": "Mode of the field (e.g., NULLABLE, REQUIRED)"
+                                                        },
+                                                        "description": {
+                                                            "type": "string",
+                                                            "description": "Description of the field"
+                                                        }
+                                                    }
+                                                },
+                                                "description": "Schema details of the table"
+                                            },
+                                            "num_rows": {
+                                                "type": "integer",
+                                                "description": "Total number of rows in the table"
+                                            }
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "query",
+                                    "tableSchema"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful execution of SQL query",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "results": {
+                                            "type": "string",
+                                            "description": "The JSON string containing the results of the SQL query."
+                                        },
+                                        "schema": {
+                                            "type": "object",
+                                            "description": "The schema of the result table as processed based on the query."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request - Missing or invalid parameters"
+                    },
+                    "500": {
+                        "description": "Internal server error - Issues with executing the query or processing the result"
+                    }
+                }
+            }
+        }
+    }
+}

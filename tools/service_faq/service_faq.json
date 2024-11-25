@@ -1,0 +1,27 @@
+{
+  "name": "b552d7be-b261-4d7c-989e-d8979aa70460",
+  "displayName": "service_faq",
+  "description": "This tool is designed to extract and index information from a selected knowledge source, enabling it to answer user queries based on the content of that source. The tool follows a structured approach:\n\n    Data Extraction: It extracts relevant text data from the selected knowledge source, ensuring that all content, including sections, headers, and key details, is captured.\n\n    Data Processing and Indexing: After extracting the text, the tool processes and organizes the content into meaningful sections such as FAQs, key terms, and other relevant information. This data is then indexed for efficient searching and retrieval.\n\n    Query Handling and Answering: When a user submits a query, the tool matches it to the indexed content, using natural language processing (NLP) to identify relevant keywords and concepts. It retrieves the most appropriate sections or answers and presents them to the user in a clear format.\n\n    Error Handling: If the tool cannot find an answer matching the query, it informs the user and optionally suggests refining the query for better results.",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/567815960506/locations/us/collections/default_collection/dataStores/faq_1732534472977",
+      "documentProcessingMode": "DOCUMENTS"
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "gemini_15_flash_002"
+      }
+    },
+    "fallbackPrompt": {
+    
+    },
+    "groundingSettings": {
+    
+    },
+    "payloadSettings": {
+    
+    }
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

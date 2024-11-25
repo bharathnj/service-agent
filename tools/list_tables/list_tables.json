@@ -1,0 +1,9 @@
+{
+  "name": "8782b73f-230e-4ddd-9e25-1fb94e5e654e",
+  "displayName": "list_tables",
+  "description": "This tool can be used to get the list of tables in the dataset\n\nproject_id: 'sample-9e286'\nDataset_id: 'service_agent'\nTable_id: 'sample-9e286.service_agent.sales'",
+  "openApiSpec": {
+    "ignoreUnknownFields": true
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

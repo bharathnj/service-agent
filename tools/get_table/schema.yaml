@@ -1,0 +1,86 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Get table schema API",
+    "description": "API to get information about a table, including the description, schema, and number of rows that will help answer the user's question. Always use the fully qualified dataset and table names.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://us-central1-sample-9e286.cloudfunctions.net/get_table"
+    }
+  ],
+  "paths": {
+    "/get_table": {
+      "get": {
+        "summary": "Get information about a table",
+        "description": "Retrieves metadata for the specified table_id, including the description, schema, and number of rows.",
+        "operationId": "get_table",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "table_id",
+            "description": "The identifier of the table along with the Project_id and Dataset_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Detailed information about the table",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "string",
+                      "description": "A brief description of the table"
+                    },
+                    "schema": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": "Name of the field in the table"
+                          },
+                          "type": {
+                            "type": "string",
+                            "description": "Data type of the field"
+                          },
+                          "mode": {
+                            "type": "string",
+                            "description": "Mode of the field (e.g., NULLABLE, REQUIRED)"
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": "Description of the field"
+                          }
+                        }
+                      },
+                      "description": "Schema details of the table"
+                    },
+                    "num_rows": {
+                      "type": "integer",
+                      "description": "Total number of rows in the table"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request - Invalid query parameter or missing required parameter"
+          },
+          "404": {
+            "description": "Table not found"
+          }
+        }
+      }
+    }
+  }
+}

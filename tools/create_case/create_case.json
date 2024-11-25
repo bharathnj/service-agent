@@ -1,0 +1,9 @@
+{
+  "name": "83f12393-f877-44ec-a822-6dc54e78342e",
+  "displayName": "create_case",
+  "description": "This tool allows to create a new support case in the support_cases table in BigQuery. The user is required to provide essential details about the issue and its priority. \n\n1. The tool will automatically generate a unique case_id and set the initial status of the case as \"Open\". Use this tools to Create a new support case with a unique case_id, description of the issue, priority, and an initial status of \"Open\".\n    Only description and priority need to be provided by the user.\n    Automatically generates a new case_id for the case.\n    Inserts the case details into the support_cases table in BigQuery.\n\n2. Required Inputs:\n    description: A string describing the issue the user is facing (e.g., \"Issue with logging into the application\").\n    priority: The priority level of the case (e.g., \"Low\", \"Medium\", \"High\").\n\n3. Automatically Generated Fields:\n\n    case_id: A unique identifier for the case (auto-generated).\n    status: Always set to \"Open\" by default.\n\nProject_id: 'sample-9e286'\nDataset_id: 'service_agent'\nTable_id: 'sample-9e286.service_agent.support_cases'",
+  "openApiSpec": {
+    "ignoreUnknownFields": true
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

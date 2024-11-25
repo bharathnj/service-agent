@@ -1,0 +1,64 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "List tables API",
+        "description": "API to list all the tables in a specified dataset_id",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://us-central1-sample-9e286.cloudfunctions.net/list_tables"
+        }
+    ],
+    "paths": {
+        "/list_tables": {
+            "get": {
+                "summary": "List all tables present in dataset_id",
+                "description": "Returns the names of all tables for the specified dataset_id",
+                "operationId": "list_tables",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "dataset_id",
+                        "description": "The identifier of the dataset",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of all tables",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "dataset_id": {
+                                            "type": "string",
+                                            "description": "The identifier of the dataset"
+                                        },
+                                        "tables": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            },
+                                            "description": "The list of all table names in dataset_id"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request - Invalid query parameter or missing required parameter"
+                    },
+                    "404": {
+                        "description": "Dataset not found"
+                    }
+                }
+            }
+        }
+    }
+}

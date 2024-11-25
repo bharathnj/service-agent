@@ -1,0 +1,82 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Create Support Case API",
+    "description": "API to create a new support case in the 'support_cases' table in BigQuery.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://us-central1-sample-9e286.cloudfunctions.net/create_cases"
+    }
+  ],
+  "paths": {
+    "/create_case": {
+      "post": {
+        "summary": "Create a new support case",
+        "description": "This API endpoint allows users to create a new support case in the 'support_cases' table. The user must provide an issue description and priority level.",
+        "operationId": "create_case",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "description": {
+                    "type": "string",
+                    "description": "A brief description of the issue."
+                  },
+                  "priority": {
+                    "type": "string",
+                    "description": "The priority level of the case (Low, Medium, High)."
+                  }
+                },
+                "required": [
+                  "description",
+                  "priority"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Case created successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "case_id": {
+                      "type": "string",
+                      "description": "The unique identifier for the created case."
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": "The status of the case."
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Description of the issue."
+                    },
+                    "priority": {
+                      "type": "string",
+                      "description": "Priority level of the case."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request - Missing or invalid parameters."
+          },
+          "500": {
+            "description": "Internal server error - Unable to create the case."
+          }
+        }
+      }
+    }
+  }
+}
