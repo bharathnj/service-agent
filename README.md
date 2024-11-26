@@ -15,11 +15,11 @@ Now that the schema is defined, let’s go ahead and ingest data into the table.
 
 ## Python Cloud Run Functions
 
-1. Go to Cloud Functions in Google Cloud Console to CREATE a new Cloud Function or use the link: https://console.cloud.google.com/functions/add. 
+1. Go to Cloud Run Functions in Google Cloud Console to CREATE a new Cloud Run Function or use the link: https://console.cloud.google.com/functions/add. 
 
 2. Provide Function Name “get_tables”, "list_table", "sql_query" and choose Region as “us-central1”. Set Authentication to “Allow unauthenticated invocations” and click NEXT. Choose Python latest version as runtime and Inline Editor for the source code.
 
-3. Copy the contents of the Python file (main.py and requiremnts.py) from this project and replace the ones in your new Google Cloud Java Cloud Function.
+3. Copy the contents of the Python file (main.py and requiremnts.txt) from this project and replace the ones in your new Google Cloud Python Cloud Run Function.
 
 4. Remember to change the <<PROJECT_ID>> placeholder where its applicable.
 
