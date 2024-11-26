@@ -62,3 +62,10 @@ Prepare your data using the provided CSV files and ingest it into the respective
 5. Copy the generated code snippet and embed it into your website.  
    
 ![Website Integration](https://github.com/user-attachments/assets/f4215723-7221-4e98-9f1e-f41491374aa5)  
+
+
+## 📖 Read More  
+
+Check out the detailed blog post on Medium:  
+[Service Agent Powered by Vertex AI](https://medium.com/@njbharathkumar/service-agent-powered-by-vertex-ai-a4e137ccdae6)  
+
