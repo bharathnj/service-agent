@@ -1,5 +1,5 @@
 # Service Agent
-The Service Agent streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. Leveraging technologies like 
+The Service Agent streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. Leveraging technologies below. 
 * Vertex AI Agent Builder
 * BigQuery
 * Cloud run Functions (Python)
