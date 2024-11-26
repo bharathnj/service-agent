@@ -54,4 +54,11 @@ Prepare your data using the provided CSV files and ingest it into the respective
 ---
 
 ## 🌐 Integrate the Service Agent into the Website  
+
+1. Open **Agent Builder** and select your agent.  
+2. Navigate to the **Main Menu** and click on **Integrations**.  
+3. Under the **Text-Based** section, select **Conversational Messenger** and click **Connect**.  
+4. Choose the desired UI and submit. A code snippet will be generated.  
+5. Copy the generated code snippet and embed it into your website.  
+   
 ![Website Integration](https://github.com/user-attachments/assets/f4215723-7221-4e98-9f1e-f41491374aa5)  
