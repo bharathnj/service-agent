@@ -1,7 +1,6 @@
 {
   "defaultLanguageCode": "en",
   "timeZone": "America/Los_Angeles",
-  "enableLogging": true,
   "projectNumber": 567815960506,
   "speechToTextSettings": {
     "enableSpeechAdaptation": true
@@ -20,7 +19,7 @@
     
     },
     "loggingSettings": {
-      "enableInteractionLogging": true
+    
     }
   },
   "speakerIdSettings": {
@@ -36,7 +35,7 @@
   
   },
   "answerFeedbackSettings": {
-    "enableAnswerFeedback": true
+  
   },
   "startPlaybook": "Service Agent",
   "webClientSettings": {

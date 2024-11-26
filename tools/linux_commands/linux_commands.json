@@ -1,0 +1,27 @@
+{
+  "name": "e826e4f6-1966-440a-a18e-27598fd1153f",
+  "displayName": "linux_commands",
+  "description": "Use this tool that provides relevant Linux commands based on user queries, including syntax, usage examples, and step-by-step instructions for efficient terminal operations.",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/567815960506/locations/us/collections/default_collection/dataStores/linux-commands_1732591017441",
+      "documentProcessingMode": "DOCUMENTS"
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "gemini_15_flash_002"
+      }
+    },
+    "fallbackPrompt": {
+    
+    },
+    "groundingSettings": {
+    
+    },
+    "payloadSettings": {
+    
+    }
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}
