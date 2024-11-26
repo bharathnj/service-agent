@@ -2,7 +2,7 @@
 The Service Agent streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. Leveraging cutting-edge technologies like BigQuery, Google Cloud Storage, and Vertex AI, the Service Agent ensures seamless performance, scalability, and real-time query handling.
 
 
-## Java Cloud Functions
+## Python Cloud Run Functions
 
 1. Go to Cloud Functions in Google Cloud Console to CREATE a new Cloud Function or use the link: https://console.cloud.google.com/functions/add. 
 
