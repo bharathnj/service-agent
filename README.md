@@ -49,7 +49,7 @@ Prepare your data using the provided CSV files and ingest it into the respective
 ---
 
 ## 🔍 How Does It Work?  
-<img width="1106" alt="Screenshot 2024-11-26 at 2 23 44 PM" src="https://github.com/user-attachments/assets/ef63beb1-da16-4751-a808-e2405217dbb4">
+<img width="800" alt="Screenshot 2024-11-26 at 2 23 44 PM" src="https://github.com/user-attachments/assets/ef63beb1-da16-4751-a808-e2405217dbb4">
 
 ---
 
