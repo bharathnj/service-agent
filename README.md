@@ -7,7 +7,7 @@ The Service Agent streamlines case management and FAQ handling for enterprises, 
 * Web App (Flask)
 
 
-## Make sure the Sales and Support cases tables are created in BigQuery before you begin with this step.
+## Make sure BigQuery tables created before you begin with this step.
 
 We have created 2 CSV files for data.
 
