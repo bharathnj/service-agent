@@ -58,6 +58,9 @@ Prepare your data using the provided CSV files and ingest it into the respective
 
 ---
 
+## 🔍 TOOLS Creation
+In Agent Builder, we create TOOLS where we define their purpose, such as when to use them, and select the type as OpenAPI, which allows us to call Cloud Run Functions. Refer to [Service Agent Powered by Vertex AI](https://medium.com/@njbharathkumar/service-agent-powered-by-vertex-ai-a4e137ccdae6) blog for complete steps.
+
 ## 🌐 Integrate the Service Agent into the Website  
 
 1. Open **Agent Builder** and select your agent.  
