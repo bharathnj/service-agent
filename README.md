@@ -38,4 +38,5 @@ Now that the schema is defined, let’s go ahead and ingest data into the table.
 
 
 ## Integrate the Servive Agent into the website
-<img width="885" alt="Screenshot 2024-11-26 at 1 12 24 PM" src="https://github.com/user-attachments/assets/5a3ac522-f1b8-4176-8023-0c42e61eddaf">
+<img width="885" alt="Screenshot 2024-11-26 at 1 12 43 PM" src="https://github.com/user-attachments/assets/f4215723-7221-4e98-9f1e-f41491374aa5">
+
