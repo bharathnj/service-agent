@@ -1,4 +1,4 @@
-<img width="551" alt="Screenshot 2024-11-26 at 2 30 50 PM" src="https://github.com/user-attachments/assets/69571c06-3415-40e2-b44f-f4e98695ecc4"># 🚀 Service Agent  
+# 🚀 Service Agent  
 The **Service Agent** streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. It leverages the following technologies:  
 
 - 🤖 **Vertex AI Agent Builder**  
