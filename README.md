@@ -1,7 +1,8 @@
 # 🚀 Service Agent  
 The **Service Agent** streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. It leverages the following technologies:  
 
-- 🤖 **Vertex AI Agent Builder**  
+- 🤖 **Vertex AI Agent Builder**
+- 🤖 **Gemini AI (gemini-1.5-flash)**
 - 🗃️ **BigQuery**  
 - 🐍 **Cloud Run Functions (Python)**  
 - ☁️ **Google Cloud Storage**  
