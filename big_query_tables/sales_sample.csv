@@ -1,0 +1,21 @@
+SaleID,Date,CustomerName,Product,Quantity,UnitPrice,TotalAmount,Salesperson,Region
+1,2024-11-01,John Doe,Smartphone,2,500,1000,Jane Smith,North
+2,2024-11-02,Mary Johnson,Laptop,1,1200,1200,Mark Lee,South
+3,2024-11-03,James Brown,Tablet,3,300,900,Susan Adams,West
+4,2024-11-04,Linda Davis,Smartwatch,5,200,1000,Chris White,East
+5,2024-11-05,Robert Wilson,Headphones,4,150,600,Karen Green,North
+6,2024-11-06,Patricia Miller,Smartphone,1,500,500,Jane Smith,South
+7,2024-11-07,Michael Taylor,Laptop,2,1200,2400,Mark Lee,East
+8,2024-11-08,Elizabeth Lee,Tablet,1,300,300,Susan Adams,West
+9,2024-11-09,David Harris,Smartwatch,3,200,600,Chris White,South
+10,2024-11-10,Jennifer Clark,Headphones,2,150,300,Karen Green,North
+11,2024-11-11,William Lewis,Smartphone,4,500,2000,Jane Smith,East
+12,2024-11-12,Sophie Hall,Laptop,1,1200,1200,Mark Lee,West
+13,2024-11-13,Jack Allen,Tablet,2,300,600,Susan Adams,North
+14,2024-11-14,Lucas Young,Smartwatch,6,200,1200,Chris White,South
+15,2024-11-15,Charlotte King,Headphones,5,150,750,Karen Green,East
+16,2024-11-16,James Wright,Smartphone,3,500,1500,Jane Smith,West
+17,2024-11-17,Olivia Scott,Laptop,1,1200,1200,Mark Lee,North
+18,2024-11-18,Liam Adams,Tablet,4,300,1200,Susan Adams,South
+19,2024-11-19,Ava Baker,Smartwatch,7,200,1400,Chris White,West
+20,2024-11-20,Mason Perez,Headphones,3,150,450,Karen Green,North
