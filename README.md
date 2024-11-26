@@ -30,3 +30,9 @@ Now that the schema is defined, let’s go ahead and ingest data into the table.
 4. Remember to change the <<PROJECT_ID>> placeholder where its applicable.
 
 5. Deploy the Cloud Function and test it from the TESTING tab of your newly deployed Cloud Functions (If there are deployment errors you can see them in the LOGS tab).
+
+
+## How Does it work?
+<img width="1052" alt="Screenshot 2024-11-26 at 1 05 46 PM" src="https://github.com/user-attachments/assets/b9caa247-81ac-43cf-88b6-0488a12c5755">
+
+
