@@ -37,3 +37,5 @@ Now that the schema is defined, let’s go ahead and ingest data into the table.
 <img width="1111" alt="Screenshot 2024-11-26 at 1 10 11 PM" src="https://github.com/user-attachments/assets/b72e08cc-c610-45a7-8f51-b476ee95603e">
 
 
+## Integrate the Servive Agent into the website
+<img width="885" alt="Screenshot 2024-11-26 at 1 12 24 PM" src="https://github.com/user-attachments/assets/5a3ac522-f1b8-4176-8023-0c42e61eddaf">
