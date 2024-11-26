@@ -1,42 +1,57 @@
-# Service Agent
-The Service Agent streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. Leveraging technologies below. 
-* Vertex AI Agent Builder
-* BigQuery
-* Cloud run Functions (Python)
-* Google Cloud Storage
-* Web App (Flask)
+# 🚀 Service Agent  
+The **Service Agent** streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. It leverages the following technologies:  
 
+- 🤖 **Vertex AI Agent Builder**  
+- 🗃️ **BigQuery**  
+- 🐍 **Cloud Run Functions (Python)**  
+- ☁️ **Google Cloud Storage**  
+- 🌐 **Web App (Flask)**  
 
-## Make sure BigQuery tables created before you begin with this step.
+---
 
-We have created 2 CSV files for data.
+## ⚙️ Prerequisites  
 
-Schema and Data Ingestion for **Sales_case**:
-SaleID	Date	CustomerName	Product	Quantity	UnitPrice	TotalAmount	Salesperson	Region
+### 🗂️ BigQuery Tables  
+Ensure the following BigQuery tables are created before proceeding:  
 
-Schema and Data Ingestion for **Support_sase**:
-Case ID	Customer Name	Issue Summary	Priority	Status	Created Date	Resolved Date	Assigned To 
+#### **Sales_case**  
+Schema:  
+`SaleID | Date | CustomerName | Product | Quantity | UnitPrice | TotalAmount | Salesperson | Region`  
 
-Now that the schema is defined, let’s go ahead and ingest data into the table.
+#### **Support_case**  
+Schema:  
+`CaseID | CustomerName | IssueSummary | Priority | Status | CreatedDate | ResolvedDate | AssignedTo`  
 
-## Python Cloud Run Functions
+Prepare your data using the provided CSV files and ingest it into the respective tables.  
 
-1. Go to Cloud Run Functions in Google Cloud Console to CREATE a new Cloud Run Function or use the link: https://console.cloud.google.com/functions/add. 
+---
 
-2. Provide Function Name “get_tables”, "list_table", "sql_query" and choose Region as “us-central1”. Set Authentication to “Allow unauthenticated invocations” and click NEXT. Choose Python latest version as runtime and Inline Editor for the source code.
+## 🐍 Python Cloud Run Functions  
 
-3. Copy the contents of the Python file (main.py and requiremnts.txt) from this project and replace the ones in your new Google Cloud Python Cloud Run Function.
+1. Navigate to **Cloud Run Functions** in the Google Cloud Console to create a new function:  
+   [➕ Add Cloud Function](https://console.cloud.google.com/functions/add)  
 
-4. Remember to change the <<PROJECT_ID>> placeholder where its applicable.
+2. Provide the function names:  
+   - `get_tables`  
+   - `list_table`  
+   - `sql_query`  
 
-5. Deploy the Cloud Function and test it from the TESTING tab of your newly deployed Cloud Functions (If there are deployment errors you can see them in the LOGS tab).
+   Choose the region as `us-central1`. Set authentication to **Allow unauthenticated invocations** and click **NEXT**.  
 
+3. Select the latest Python runtime and use the **Inline Editor** for source code.  
 
-## How Does it work?
-<img width="1106" alt="Screenshot 2024-11-26 at 2 06 46 PM" src="https://github.com/user-attachments/assets/464b84cb-cb1a-4ab2-a9e5-69fe290e05f3">
+4. Copy the contents of the `main.py` and `requirements.txt` files from this project into the respective fields in the editor.  
 
+5. Replace all instances of `<<PROJECT_ID>>` with your project ID.  
 
+6. Deploy the Cloud Function and test it using the **TESTING** tab. For deployment errors, check the **LOGS** tab.  
 
-## Integrate the Service Agent into the website
-<img width="885" alt="Screenshot 2024-11-26 at 1 12 43 PM" src="https://github.com/user-attachments/assets/f4215723-7221-4e98-9f1e-f41491374aa5">
+---
 
+## 🔍 How Does It Work?  
+![How It Works](https://github.com/user-attachments/assets/464b84cb-cb1a-4ab2-a9e5-69fe290e05f3)  
+
+---
+
+## 🌐 Integrate the Service Agent into the Website  
+![Website Integration](https://github.com/user-attachments/assets/f4215723-7221-4e98-9f1e-f41491374aa5)  
