@@ -1,4 +1,4 @@
-# 🚀 Service Agent  
+<img width="551" alt="Screenshot 2024-11-26 at 2 30 50 PM" src="https://github.com/user-attachments/assets/69571c06-3415-40e2-b44f-f4e98695ecc4"># 🚀 Service Agent  
 The **Service Agent** streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. It leverages the following technologies:  
 
 - 🤖 **Vertex AI Agent Builder**  
@@ -61,7 +61,8 @@ Prepare your data using the provided CSV files and ingest it into the respective
 4. Choose the desired UI and submit. A code snippet will be generated.  
 5. Copy the generated code snippet and embed it into your website.  
    
-![Website Integration](https://github.com/user-attachments/assets/f4215723-7221-4e98-9f1e-f41491374aa5)  
+<img width="551" alt="Screenshot 2024-11-26 at 2 30 50 PM" src="https://github.com/user-attachments/assets/286097ad-b75d-408a-b2e8-87cbcfd2cbec">
+
 
 
 ## 📖 Read More  
