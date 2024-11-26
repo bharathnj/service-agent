@@ -24,6 +24,11 @@ Schema:
 
 Prepare your data using the provided CSV files and ingest it into the respective tables.  
 
+### 🗂️ Upload the necessary documents in Gooogle Cloud Storage
+
+1. Create a new bucket in Google Cloud Storage
+2. Upload the necessary files for Agent Knowledge Source
+3. Sample file are availabel in repo 
 ---
 
 ## 🐍 Python Cloud Run Functions  
