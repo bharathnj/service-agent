@@ -33,8 +33,8 @@ Now that the schema is defined, let’s go ahead and ingest data into the table.
 
 
 ## How Does it work?
+<img width="1106" alt="Screenshot 2024-11-26 at 2 06 46 PM" src="https://github.com/user-attachments/assets/464b84cb-cb1a-4ab2-a9e5-69fe290e05f3">
 
-<img width="1111" alt="Screenshot 2024-11-26 at 1 10 11 PM" src="https://github.com/user-attachments/assets/b72e08cc-c610-45a7-8f51-b476ee95603e">
 
 
 ## Integrate the Service Agent into the website
