@@ -49,7 +49,8 @@ Prepare your data using the provided CSV files and ingest it into the respective
 ---
 
 ## 🔍 How Does It Work?  
-![How It Works](https://github.com/user-attachments/assets/464b84cb-cb1a-4ab2-a9e5-69fe290e05f3)  
+<img width="1106" alt="Screenshot 2024-11-26 at 2 19 00 PM" src="https://github.com/user-attachments/assets/4fa59560-1087-4462-816b-d326914214f8">
+
 
 ---
 
