@@ -1,5 +1,11 @@
 # Service Agent
-The Service Agent streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. Leveraging cutting-edge technologies like BigQuery, Google Cloud Storage, and Vertex AI, the Service Agent ensures seamless performance, scalability, and real-time query handling.
+The Service Agent streamlines case management and FAQ handling for enterprises, eliminating manual intervention and improving operational efficiency. Leveraging technologies like 
+* Vertex AI Agent Builder
+* BigQuery
+* Cloud run Functions (Python)
+* Google Cloud Storage
+* Web App (Flask)
+
 
 ## Make sure the Sales and Support cases tables are created in BigQuery before you begin with this step.
 
