@@ -1,0 +1,5 @@
+Case ID,Customer Name,Issue Summary,Priority,Status,Created Date,Resolved Date,Assigned To
+1001,John Doe,Login not working,High,Open,2024-11-20,,Sarah Johnson
+1002,Jane Smith,Payment failure,Medium,In Progress,2024-11-19,,Alex Brown
+1003,Mike Lee,App crashing,Critical,Resolved,2024-11-18,2024-11-22,Emma Watson
+1004,Emily Davis,Password reset issue,Low,Open,2024-11-21,,Jack Miller
